@@ -62,7 +62,8 @@ local theme = lush(function(injected_functions)
     -- See :h highlight-groups
     --
     -- ColorColumn    { }, -- Columns set with 'colorcolumn'
-    Conceal        {bg = hsl(52, 39, 85), fg = hsl(0, 0, 10)}, -- Placeholder characters substituted for concealed text (see 'conceallevel')
+    -- Conceal        {fg = hsl(215, 53, 69).darken(10)}, -- Placeholder characters substituted for concealed text (see 'conceallevel')
+    Conceal        {fg = hsl(52, 39, 85)}, -- Placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor         {bg = hsl(52, 39, 85), fg = hsl(0, 0, 10)}, -- Character under the cursor
     -- CurSearch      { }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
     lCursor        {bg = hsl(52, 39, 85), fg = hsl(0, 0, 10)}, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
@@ -131,7 +132,8 @@ local theme = lush(function(injected_functions)
     -- WarningMsg     { }, -- Warning messages
     Winseparator   {fg = Whitespace.fg}, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
     -- WildMenu       { }, -- Current match in 'wildmenu' completion
-    -- WinBar         { }, -- Window bar of current window
+    -- WinBar         {bg = hsl(215, 53, 69), fg = Normal.fg.darken(10)}, -- Window bar of current window
+    WinBar         {fg = Normal.fg.darken(20)}, -- Window bar of current window
     -- WinBarNC       { }, -- Window bar of not-current windows
 
     -- Common vim syntax groups used for all kinds of code and markup.
