@@ -4,30 +4,24 @@ local hsl = lush.hsl
 --
 local nightingale = {}
 nightingale.normal = {
-    -- a = {bg = hsl(215, 53, 65).hex, fg = hsl(0, 0, 10).hex},
-    -- b = {bg = hsl(0, 0, 10).hex, fg = hsl(215, 53, 65).hex},
-    a = {bg = hsl(52, 39, 85).darken(10).hex, fg = hsl(0, 0, 10).hex},
-    b = {bg = hsl(0, 0, 10).hex, fg = hsl(52, 39, 85).darken(10).hex},
-    -- c = {},
+    a = {bg = hsl(215, 53, 69).hex, fg = hsl(0, 0, 15).hex},
+    b = {bg = hsl(0, 0, 15).hex, fg = hsl(215, 53, 69).hex},
+    c = {bg = hsl(0, 0, 10).hex, fg = hsl(0, 0, 10).hex},
 }
 nightingale.insert = {
     -- String ish color
     -- a = {bg = hsl(104, 35, 60).hex, fg = hsl(0, 0, 10).hex},
     -- b = {bg = hsl(0, 0, 10).hex, fg = hsl(104, 35, 60).hex},
 
-    -- Class ish color
-    a = {bg = hsl("#7CD0BF").hex, fg = hsl(0, 0, 10).hex},
-    b = {bg = hsl(0, 0, 10).hex, fg = hsl("#7CD0BF").hex},
-
     -- Namespace ish color
-    -- a = {bg = hsl(168, 47, 45).lighten(8).hex, fg = hsl(0, 0, 10).hex},
-    -- b = {bg = hsl(0, 0, 10).hex, fg = hsl(168, 47, 45).lighten(8).hex},
-    -- c = {},
+    a = {bg = hsl(168, 47, 45).hex, fg = hsl(0, 0, 15).hex},
+    b = {bg = hsl(0, 0, 15).hex, fg = hsl(168, 47, 45).hex},
+    c = {bg = hsl(0, 0, 10).hex, fg = hsl(0, 0, 10).hex},
 }
 nightingale.visual = {
     a = {bg = hsl("#A584C0").hex, fg = hsl(0, 0, 10).hex},
-    b = {bg = hsl(0, 0, 10).hex, fg = hsl("#A584C0").hex},
-    -- c = {},
+    b = {bg = hsl(0, 0, 15).hex, fg = hsl("#A584C0").hex},
+    c = {bg = hsl(0, 0, 10).hex, fg = hsl(0, 0, 10).hex},
 }
 nightingale.replace = {
     -- a = {},
@@ -35,9 +29,9 @@ nightingale.replace = {
     -- c = {},
 }
 nightingale.command = {
-    -- a = {},
-    -- b = {},
-    -- c = {},
+    a = {bg = hsl("#ff9488").hex, fg = hsl(0, 0, 10).hex},
+    b = {bg = hsl(0, 0, 15).hex, fg = hsl("#ff9488").hex},
+    c = {bg = hsl(0, 0, 10).hex, fg = hsl(0, 0, 10).hex},
 }
 nightingale.inactive = {
     -- a = {},
@@ -46,40 +40,3 @@ nightingale.inactive = {
 }
 
 return nightingale
-
--- local spec = lush.extends({ng}).with(function()
---     return {
---         normal = {
---             a = {bg = hsl(0, 0, 10), fg = hsl(215, 53, 69)},
---             b = {},
---             c = {},
---         },
---         insert = {
---             a = {},
---             b = {},
---             c = {},
---         },
---         visual = {
---             a = {},
---             b = {},
---             c = {},
---         },
---         replace = {
---             a = {},
---             b = {},
---             c = {},
---         },
---         command = {
---             a = {},
---             b = {},
---             c = {},
---         },
---         inactive = {
---             a = {},
---             b = {},
---             c = {bg = hsl(0, 0, 10)},
---         },
---     }
--- end)
---
--- lush(spec)

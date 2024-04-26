@@ -61,7 +61,7 @@ local theme = lush(function(injected_functions)
     --
     -- See :h highlight-groups
     --
-    -- ColorColumn    { }, -- Columns set with 'colorcolumn'
+     ColorColumn    {bg = hsl(0, 0, 15)}, -- Columns set with 'colorcolumn'
     -- Conceal        {fg = hsl(215, 53, 69).darken(10)}, -- Placeholder characters substituted for concealed text (see 'conceallevel')
     Conceal        {fg = hsl(52, 39, 85)}, -- Placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor         {bg = hsl(52, 39, 85), fg = hsl(0, 0, 10)}, -- Character under the cursor
@@ -178,7 +178,8 @@ local theme = lush(function(injected_functions)
     Structure      {fg = hsl("#7CD0BF")}, --   struct, union, enum, etc.
     -- Typedef        { }, --   A typedef
 
-    Special        {fg = hsl("#FFFFFF")}, -- (*) Any special symbol
+    -- Special        {fg = hsl("#FFFFFF")}, -- (*) Any special symbol
+    Special        {fg = Normal.fg}, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
     -- Tag            { }, --   You can use CTRL-] on this
     -- Delimiter      { }, --   Character that needs attention
